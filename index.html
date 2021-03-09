@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!--    <p class="display"></p> -->
+    <div class="container py-2 text-success">
+        <h1 class="py-4 display-2">My Books</h1>
+    
+    <table class="table table-hover align-middle text-dark" id="table">
+        <thead>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Pages</th>
+            <th scope="col">Status</th>
+        </thead>
+        <tr>
+            <td>The Bell Jar</td>
+            <td>Sylvia Plath</td>
+            <td>244</td>
+            <td><button class="btn btn-success col-12" onclick="this.status()">Read</button></td>
+        </tr>
+        <tr>
+            <td>Harry Potter and the Sorcerer's Stone</td>
+            <td>JK Rowling</td>
+            <td>309</td>
+            <td><button class="btn btn-outline-secondary col-12">Unread</button></td>
+        </tr>
+        <tr>
+            <td>Harry Potter and the Sorcerer's Stone</td>
+            <td>JK Rowling</td>
+            <td>309</td>
+            <td><button class="btn btn-outline-secondary col-12">Unread</button></td>
+        </tr>
+    </table><div class="posPlus">
+        <button class="btn btn-success btn-lg" onclick="togglePopUp()" id="plus" type="button">+</button>
+    </div>
+    <div class="center show" id="popUp">
+        <div class="col-8 m-auto card text-dark bg-light" id="newBook">
+            <div class="card-header bg-success text-white">Add new book<span><button class="btn btn-dark btn-sm py-0 px-2" onclick="togglePopUp()" type="button">x</button></span></div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input class="form-control title" type="text"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="author" class="form-label">Author</label>
+                        <input class="form-control author" type="text"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pages" class="form-label"># of Pages</label>
+                        <input class="form-control pages" type="number"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="status" class="form-label">Status</label>
+                        <select class="form-select status">
+                            <option selected value="1">Read</option>
+                            <option value="0">Unread</option>
+                        </select>
+                    </div>
+                    <div id="addLib">
+                        <button class="btn btn-success" type="button" onclick="addToLibrary()">Add to Library</button>
+                    </div>
+                </form>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
