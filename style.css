@@ -19,10 +19,6 @@ div.show {
     justify-content: center;
 }
 
-#plus {
-    border-radius: 50%;
-}
-
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -43,6 +39,12 @@ div.show {
 
 #newBook {
     max-width: 30rem;
+}
+
+#plus:active {
+    color: rgba(20, 108, 67, 0.976);
+    border-radius: 50%;
+    box-shadow: rgba(60, 153, 110, 0.5) 0px 0px 0px 4px;   
 }
 
 @keyframes scale {

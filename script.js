@@ -86,7 +86,6 @@ class Store {
     static addBook(book) {
         const books = Store.getBooks();
         books.push(book);
-
         localStorage.setItem('books', JSON.stringify(books));
     } 
 
@@ -151,3 +150,7 @@ function togglePopUp() {
         document.querySelector('#popUp').classList.add("show");
     }
 }
+
+document.querySelector('#plus').addEventListener('click', () => {
+    togglePopUp();
+})
