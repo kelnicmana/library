@@ -1,19 +1,18 @@
 .center {
+    /*
     visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
+    */
     display: flex;
     justify-content: center;
 }
 
 div.show {
     visibility: visible;
-}
-
-#newBook {
 }
 
 .posPlus {
@@ -33,4 +32,12 @@ div.show {
 #addLib {
     display: flex;
     justify-content: center;
+}
+
+#trash {
+    padding-left: 0.85rem;
+}
+
+.line {
+    text-decoration: line-through;
 }
