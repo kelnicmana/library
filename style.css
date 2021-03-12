@@ -50,11 +50,6 @@ div.show {
     box-shadow: rgba(60, 153, 110, 0.5) 0px 0px 0px 4px;   
 }
 
-#title:active, #author:active, #status:active, #title:focus, #author:focus, #status:focus {
-    border-color: #28a745;
-    box-shadow: rgba(25, 135, 84, 0.25) 0px 0px 0px 4px;
-}
-
 @keyframes scale {
     0% {transform: scale(0);}
     100% {transform: scale(1)} 
