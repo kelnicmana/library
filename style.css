@@ -28,7 +28,6 @@ div.show {
     display: flex;
     justify-content: center;
 }
-
 #trash {
     padding-left: 0.85rem;
 }
@@ -41,10 +40,19 @@ div.show {
     max-width: 30rem;
 }
 
+#plus {
+    cursor: pointer;
+}
+
 #plus:active {
     color: rgba(20, 108, 67, 0.976);
     border-radius: 50%;
     box-shadow: rgba(60, 153, 110, 0.5) 0px 0px 0px 4px;   
+}
+
+#title:active, #author:active, #status:active, #title:focus, #author:focus, #status:focus {
+    border-color: #28a745;
+    box-shadow: rgba(25, 135, 84, 0.25) 0px 0px 0px 4px;
 }
 
 @keyframes scale {
