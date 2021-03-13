@@ -64,6 +64,16 @@ class UI {
         }
         setTimeout(() => document.querySelector('.alert').remove(), 3000);
     }
+
+    static togglePopUp() {
+        if (document.querySelector('#popUp').classList.contains("show")) {
+            document.querySelector('#popUp').classList.remove("show");
+            }
+        else {
+            document.querySelector('#popUp').classList.add("show");
+        }
+    }
+
     static clearFields() {
         document.querySelector('.title').value = '';
         document.querySelector('.author').value = '';
@@ -142,15 +152,6 @@ document.querySelector('.tbody').addEventListener('click', (e) => {
     UI.deleteBook(e.target);
 });
 
-function togglePopUp() {
-    if (document.querySelector('#popUp').classList.contains("show")) {
-        document.querySelector('#popUp').classList.remove("show");
-        }
-    else {
-        document.querySelector('#popUp').classList.add("show");
-    }
-}
-
 document.querySelector('#plus').addEventListener('click', () => {
-    togglePopUp();
-})
+    UI.togglePopUp();
+});
